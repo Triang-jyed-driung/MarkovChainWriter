@@ -10,7 +10,7 @@ Creating rubbish using Markov chain.
 - pip install jieba
 
 # Usage
-- 模板放入in.txt（建议100KB，太小了会词穷，太大了跑不动）
+- 模板放入in.txt（建议100KB，太小了会词穷，太大了跑不动。示例为《三国演义》。）
 - 代码中articlelength=...（改成你需要的长度）
 - py ./markov.py
 - 打开out.txt，稍加润色，大功告成！
