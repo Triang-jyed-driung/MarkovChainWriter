@@ -5,7 +5,6 @@ txt=[]
 with open("in.txt","r",encoding="utf8") as fp:
     txt=fp.read()
 words=jieba.lcut(txt)
-print(words)
 M={}
 for i in range(2, len(words)):
     s1 = words[i-2] + '`' + words[i-1]
@@ -17,9 +16,7 @@ for i in range(2, len(words)):
         M[s1][s2] = 0
     M[s1]['`'] += 1
     M[s1][s2] += 1
-print(M)
-print(len(M))
-# beginning
+
 a = random.randint(1, len(words)-1)
 state = words[a-1] + '`' + words[a]
 with open("out.txt", "w", encoding="utf8") as fpw:
